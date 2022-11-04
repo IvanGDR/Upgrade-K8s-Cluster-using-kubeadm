@@ -173,7 +173,7 @@ Verify the control plane is working:
 [cloud_user@k8s-control]$ kubectl get nodes
 ```
 ```
-NAME                                     STATUS   ROLES                  AGE     VERSION
+NAME               STATUS   ROLES                  AGE     VERSION
 ip-10-101-32-196   Ready    <none>                 6h27m   v1.23.0
 ip-10-101-33-147   Ready    control-plane,master   6h32m   v1.23.2
 ip-10-101-35-71    Ready    <none>                 6h27m   v1.23.0
