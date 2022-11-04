@@ -15,8 +15,9 @@ kubeadm version: &version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.0", GitC
 
 
 ### Get Control Plane and Worker Nodes Names
+Execute thee following from the control plane node 
 ```
-$ kubectl get nodes
+[cloud_user@k8s-control]$ kubectl get nodes
 ```
 ```
 NAME               STATUS   ROLES                  AGE     VERSION
@@ -43,7 +44,7 @@ kubeadm version: &version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.2", GitC
 
 Drain Control Plane node:
 ```
-$ kubectl drain ip-10-101-33-147 --ignore-daemonsets
+[cloud_user@k8s-control]$ kubectl drain ip-10-101-33-147 --ignore-daemonsets
 ```
 ```
 node/ip-10-101-33-147 cordoned
@@ -183,9 +184,9 @@ Note control plane nodes has been updated as version has changed. If it shows a 
 ### 2) Upgrade Working Nodes
 
 #### Worker Node 1
-Get node information again
+From control plane node get node information again
 ```
-$ kubectl get nodes
+[cloud_user@k8s-control]$ kubectl get nodes
 ```
 ```
 NAME               STATUS   ROLES                  AGE     VERSION
@@ -312,7 +313,7 @@ From the control plane node, uncordon worker node 1:
 [cloud_user@k8s-control]$ kubectl uncordon ip-10-101-32-196.srv101.dsinternal.org
 ```
 ```
-node/ip-10-101-32-196.srv101.dsinternal.org uncordoned
+node/ip-10-101-32-196 uncordoned
 ```
 ####  For the subsequents worker nodes, do the same steps following the part 2 of this cookbook, "Upgrade Working Nodes".
 
