@@ -1,7 +1,6 @@
 # Performing a K8s Upgrade with kubeadm
 
-Current version 1.23.0
-Moving to 1.23.2
+Current version 1.23.0 - Moving to 1.23.2
 
 
 ### Get current kubeadm Version
