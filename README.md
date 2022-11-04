@@ -4,7 +4,7 @@ Current version 1.23.0
 Moving to 1.23.2
 
 
-### Get current Kubeadm Version
+### Get current kubeadm Version
 
 Use this on control plane and worker nodes to check the current kubeadm version installed.
 ```
