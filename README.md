@@ -20,7 +20,7 @@ kubeadm version: &version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.0", GitC
 $ kubectl get nodes
 ```
 ```
-NAME                                     STATUS   ROLES                  AGE     VERSION
+NAME               STATUS   ROLES                  AGE     VERSION
 ip-10-101-32-196   Ready    <none>                 5h57m   v1.23.0
 ip-10-101-33-147   Ready    control-plane,master   6h2m    v1.23.0
 ip-10-101-35-71    Ready    <none>                 5h57m   v1.23.0
