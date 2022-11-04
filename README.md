@@ -36,7 +36,9 @@ sudo apt-get install -y --allow-change-held-packages kubeadm=1.23.2-00
 Make sure it upgraded correctly:
 ```
 [cloud_user@k8s-control]$ kubeadm version
->kubeadm version: &version.Info{Major:"1", Minor:"23",
+```
+```
+kubeadm version: &version.Info{Major:"1", Minor:"23",
 GitVersion:"v1.23.2",
 GitCommit:"9d142434e3af351a628bffee3939e64c681afa4d",
 GitTreeState:"clean", BuildDate:"2022-01-19T17:34:34Z",
