@@ -38,11 +38,7 @@ Make sure it upgraded correctly:
 [cloud_user@k8s-control]$ kubeadm version
 ```
 ```
-kubeadm version: &version.Info{Major:"1", Minor:"23",
-GitVersion:"v1.23.2",
-GitCommit:"9d142434e3af351a628bffee3939e64c681afa4d",
-GitTreeState:"clean", BuildDate:"2022-01-19T17:34:34Z",
-GoVersion:"go1.17.5", Compiler:"gc", Platform:"linux/amd64"}
+kubeadm version: &version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.2", GitCommit:"9d142434e3af351a628bffee3939e64c681afa4d", GitTreeState:"clean", BuildDate:"2022-01-19T17:34:34Z", GoVersion:"go1.17.5", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
 Drain Control Plane node:
